@@ -2,25 +2,36 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Мій виправлений сайт</title>
+    <title>Мій сайт з картинкою</title>
     <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <style>
+        img {
+            border-radius: 15px; /* заокруглимо краї картинки */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* додамо легку тінь */
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Мій перший інтерактивний сайт</h1>
+        <h1>Мій перший інтерактивний сайт 🚀</h1>
     </header>
 
     <main>
         <section>
-            <p>Натисніть кнопку нижче, щоб перевірити роботу коду:</p>
+            <h2>Дивись, я додав картинку!</h2>
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500" alt="Ноутбук і код">
             
-            <button onclick="sayHello()">Натисни мене!</button>
+            <p>Тепер натисни кнопку, щоб лічильник спрацював:</p>
+            <p>Натиснуто: <span id="count">0</span> разів</p>
+            <button onclick="countUp()">Додати +1</button>
         </section>
     </main>
 
     <script>
-        function sayHello() {
-            alert("Ура! Тепер JavaScript працює правильно!");
+        let n = 0;
+        function countUp() {
+            n = n + 1;
+            document.getElementById("count").innerText = n;
         }
     </script>
 </body>
