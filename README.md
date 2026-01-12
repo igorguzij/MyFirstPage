@@ -6,6 +6,13 @@
     <title>Мій стильний сайт</title>
     <link rel="stylesheet" href="https://unpkg.com/mvp.css"> 
 </head>
+<button onclick="sayHello()">Натисни мене!</button>
+
+<script>
+function sayHello() {
+    alert("Привіт! Ти щойно запустив свій перший JavaScript код!");
+}
+</script>
 <body>
     <header>
         <nav>
