@@ -2,43 +2,26 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мій стильний сайт</title>
-    <link rel="stylesheet" href="https://unpkg.com/mvp.css"> 
+    <title>Мій виправлений сайт</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
 </head>
 <body>
     <header>
-        <nav>
-            <a href="/">Головна</a>
-            <ul>
-                <li><a href="https://github.com">Мій GitHub</a></li>
-            </ul>
-        </nav>
-        <h1>Привіт! Це мій оновлений сайт 🚀</h1>
-        <p>Я навчився змінювати дизайн за допомогою лише одного рядка коду.</p>
+        <h1>Мій перший інтерактивний сайт</h1>
     </header>
+
     <main>
         <section>
-            <header>
-                <h2>Мої досягнення</h2>
-                <p>Сьогодні я розібрався з:</p>
-            </header>
-            <aside>
-                <h3>GitHub</h3>
-                <p>Створив репозиторій та налаштував сторінку.</p>
-            </aside>
+            <p>Натисніть кнопку нижче, щоб перевірити роботу коду:</p>
+            
+            <button onclick="sayHello()">Натисни мене!</button>
         </section>
     </main>
-    <footer>
-        <hr>
-        <p>&copy; 2024 Мій перший сайт</p>
-    </footer>
-    <button onclick="sayHello()">Натисни мене!</button>
 
-<script>
-function sayHello() {
-    alert("Привіт! Ти щойно запустив свій перший JavaScript код!");
-}
-</script>
+    <script>
+        function sayHello() {
+            alert("Ура! Тепер JavaScript працює правильно!");
+        }
+    </script>
 </body>
 </html>
